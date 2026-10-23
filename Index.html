@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Мои задачи</title>
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="app-header">
+    <div class="user">
+      <div id="avatar" class="avatar">👤</div>
+      <div>
+        <div class="greeting" id="greeting">Привет!</div>
+        <div class="subtitle" id="subtitle">Управляй своими задачами</div>
+      </div>
+    </div>
+    <button class="icon-btn" id="share-btn" aria-label="Поделиться">↗</button>
+  </header>
+
+  <main class="app-main">
+    <div class="input-row">
+      <input type="text" id="task-input" placeholder="Новая задача..." autocomplete="off" maxlength="200">
+      <button class="add-btn" id="add-btn" aria-label="Добавить">+</button>
+    </div>
+
+    <ul class="task-list" id="task-list"></ul>
+
+    <div class="empty-state" id="empty-state">
+      <div class="empty-icon">📝</div>
+      <p>Пока нет задач</p>
+      <span>Добавь первую задачу выше</span>
+    </div>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
